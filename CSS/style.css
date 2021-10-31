@@ -1,0 +1,16 @@
+.container{
+    background-color: rgba(173,216,230,255);
+    width: 300px;
+    border-radius: 10px;
+    border: #83c291 1px solid;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.level-two-list{
+    background-color: #87cefa;
+}
+
+#main{
+    display: flex;
+}
