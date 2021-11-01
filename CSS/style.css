@@ -1,17 +1,17 @@
 .container{
     background-color: rgba(173,216,230,255);
-    width: 45%;
-    border-radius: 10px;
+    border-radius: 20px;
     border: #83c291 1px solid;
-    margin: auto;
     padding-left: 10px;
     padding-bottom: 5px;
     padding-right: 5px;
+    max-width: 25%;
+    height: 100%;
 }
 
 .level-two{
     background-color: #87cefa;
-    border-radius: 10px;
+    border-radius: 20px;
     border: #70ac91 2px solid;
     margin-top: 5px;
     width: 80%;
@@ -22,7 +22,7 @@
 
 .level-three{
     background-color: #b0c4de;
-    border-radius: 10px;
+    border-radius: 20px;
     border: #70ac91 2px solid;
     width: 80%;
     float: right;
@@ -32,7 +32,7 @@
 
 .level-four{
     background-color: #ffa07a;
-    border-radius: 10px;
+    border-radius: 20px;
     border: #70ac91 2px solid;
     width: 80%;
     float: right;
@@ -42,4 +42,5 @@
 
 #main{
     display: flex;
+    justify-content: space-evenly;
 }
