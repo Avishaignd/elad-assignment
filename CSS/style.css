@@ -1,14 +1,43 @@
 .container{
     background-color: rgba(173,216,230,255);
-    width: 300px;
+    width: 45%;
     border-radius: 10px;
     border: #83c291 1px solid;
     margin: auto;
-    padding: 0px 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 
-.level-two-list{
+.level-two{
     background-color: #87cefa;
+    border-radius: 10px;
+    border: #70ac91 2px solid;
+    margin-top: 5px;
+    width: 80%;
+    float: right;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.level-three{
+    background-color: #b0c4de;
+    border-radius: 10px;
+    border: #70ac91 2px solid;
+    width: 80%;
+    float: right;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.level-four{
+    background-color: #ffa07a;
+    border-radius: 10px;
+    border: #70ac91 2px solid;
+    width: 80%;
+    float: right;
+    margin-bottom: 5px;
+    padding-left: 5px;
 }
 
 #main{
