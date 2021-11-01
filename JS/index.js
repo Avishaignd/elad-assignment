@@ -8,31 +8,23 @@ const getData = async () => {
 
 const mainDiv = document.getElementById("main");
 
-
+// going over the data array, creating the paragraphs, appending and if a sub data array exists, calling the same function again with the element created last as the parent element. The styling is determined with CSS selectors
 function buildPage(array, element) {
   array.forEach((object) => {
     let listElement = document.createElement("div");
     let paragraph = document.createElement("p");
     paragraph.innerHTML = `id: ${object.id}<br>
     Site Name: ${object.name}<br>
-    <a href="${object.url}" target="#">Site URL: ${object.name}</a>`;
+    <a href="https://${object.url}" target="#">Site URL: ${object.name}</a>`;
     listElement.appendChild(paragraph);
     element.appendChild(listElement);
-    if (listElement.parentElement.classList.value == "main") {
-      listElement.classList.add("container");
-    } else if (listElement.parentElement.classList.value == "container") {
-      listElement.classList.add("level-two");
-    } else if (listElement.parentElement.classList.value == "level-two") {
-      listElement.classList.add("level-three");
-    } else if (listElement.parentElement.classList.value == "level-three") {
-      listElement.classList.add("level-four");
-    }
     if (Object.keys(object).includes("subData")) {
       buildPage(object.subData, listElement);
     }
   });
 }
 
+// eventually calling the get data and build page functions together with the main div as the parent element for the lists
 async function mainFunction() {
   const myData = await getData();
   buildPage(myData, mainDiv);
