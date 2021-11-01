@@ -1,0 +1,1 @@
+The page works only when opened with a live server due to browsers not allowing to fetch from the file scheme since it's origin is null
